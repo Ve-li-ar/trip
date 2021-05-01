@@ -1,0 +1,108 @@
+.first-screen {
+  color: $white;
+  background-image: url("../img/background-main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: $blue;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-main@2x.jpg");
+  }
+
+  @media (max-width: $tablet) {
+    width: 100%;
+    display: block;
+
+    background-image: url("../img/background-main-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-main-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile) {
+    background-image: url("../img/background-main-mobile.jpg");
+    background-size: 100% 235px;
+    background-color: transparent;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-main-mobile@2x.jpg");
+    }
+  }
+}
+
+.first-screen__caption {
+  margin: 0;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+
+  @media (max-width: $tablet) {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 60px;
+    padding-bottom: 100px;
+
+    background-image: url("../img/background-main-mobile.jpg");
+    background-size: 100% 235px;
+    background-color: $blue;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-main-mobile@2x.jpg");
+    }
+  }
+}
+
+.first-screen__wrapper {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  padding-top: 185px;
+  padding-bottom: 296px;
+
+  @media (max-width: $tablet) {
+    width: 56vw;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 83px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 90vw;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.first-screen__block {
+  font-size: 16px;
+  line-height: 27px;
+  margin: 0;
+  padding-top: 30px;
+  font-weight: 400;
+
+  @media (max-width: $mobile) {
+    color: $dark;
+    padding-top: 20px;
+  }
+}
+
+.first-screen__button {
+  margin-top: 40px;
+  padding: 30px 180px 30px 40px;
+
+  @media (max-width: $tablet) {
+    padding: 19px 107px 19px 40px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+}

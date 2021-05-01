@@ -1,0 +1,232 @@
+.prices {
+  padding-top: 240px;
+  display: grid;
+  grid-template-columns: 60% 33%;
+
+  @media (max-width: $tablet) {
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.prices__rates {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @media (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.prices__rate {
+  width: 19.3vw;
+  border: 3px solid $place-text-grey-3;
+  border-radius: 6px;
+  padding: 30px 0;
+
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 672px;
+
+  &:hover {
+    border-color: $basic-orange;
+
+    .prices__caption {
+      color: $basic-orange;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    width: 37.5vw;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $mobile) {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+}
+
+.prices__list {
+  padding-left: 0;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 54px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+
+  @media (max-width: $mobile) {
+    padding-left: 12.6vw;
+  }
+}
+
+.prices__item {
+  padding-left: 1.4vw;
+  position: relative;
+  padding-bottom: 15px;
+
+  &::before {
+    content: "";
+    background-image: url("../img/icons/tick.svg");
+    position: absolute;
+    width: 14px;
+    height: 12px;
+    fill: $basic-orange;
+    stroke: $basic-orange;
+    z-index: 3;
+    left: 10px;
+    color: $basic-orange;
+    background-size: 14px 12px;
+    display: inline-block;
+  }
+}
+
+.prices__price {
+  width: 15.6vw;
+  margin-left: 4.7vw;
+
+  @media (max-width: $tablet) {
+    width: 94.5vw;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 89.5vw;
+  }
+}
+
+.prices__price-block {
+  color: $place-text-grey;
+  font-size: 16px;
+  line-height: 27px;
+
+  @media (max-width: $tablet) {
+    margin: 0;
+  }
+}
+
+.prices__caption {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 600;
+  color: $footer-text;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: -1.27273px;
+
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.prices__span {
+  font-size: 25px;
+}
+
+.prices__span-first {
+  @media (max-width: $tablet) {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+}
+
+.prices__block {
+  padding-top: 40px;
+  border-bottom: 1px solid $place-text-grey-3;
+  padding-bottom: 28px;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (max-width: $tablet) {
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+  }
+}
+
+.prices__price-caption {
+  font-size: 55px;
+  line-height: 90px;
+  font-weight: 600;
+  color: $dark;
+  padding-top: 110px;
+}
+
+.button__price {
+  width: 16.1vw;
+  padding: 30px 3.1vw;
+  margin: 0 auto;
+
+  @media (max-width: $tablet) {
+    width: 102%;
+    margin: 0;
+    padding: 20px 55px;
+    margin-left: -3px;
+    margin-bottom: -3px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 20px 54px;
+  }
+}
+
+.prices__call-phone {
+  color: $extra-dark;
+  font-size: 22px;
+  line-height: 34px;
+  padding-left: 40px;
+  font-weight: 500;
+  padding-top: 60px;
+
+  @media (max-width: $tablet) {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+}
+
+.prices__link {
+  color: $extra-dark;
+  font-weight: 500;
+  font-family: inherit;
+
+  @media (max-width: $tablet) {
+    color: $basic-orange;
+    text-decoration: underline;
+  }
+}
+
+.prices__phone {
+  padding-top: 13px;
+}
+
+.prices__phone,
+.prices__call {
+  margin: 0;
+}
+
+.price__list-rate {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $tablet) {
+    justify-content: space-between;
+  }
+}

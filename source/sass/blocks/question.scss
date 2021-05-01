@@ -1,0 +1,126 @@
+.question {
+  margin-top: 138px;
+  margin-left: 18vw;
+  background-image: url("../img/form-sunset-desktop.jpg");
+  background-repeat: no-repeat;
+  min-height: 445px;
+  margin-bottom: 170px;
+  position: relative;
+
+  @media (max-width: $tablet) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @media (max-width: $mobile) {
+    background-image: none;
+  }
+}
+
+.question__form {
+  padding: 50px 72px;
+  background-color: $white;
+  width: 34vw;
+  align-self: end;
+  box-shadow: 0px 4px 30px $box-shadow-question;
+  position: absolute;
+  top: 18%;
+  left: 25vw;
+
+  @media (max-width: $tablet) {
+    width: 85.7vw;
+    left: 8%;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100vw;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    box-shadow: none;
+    background-color: $background-modal;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.question-window__legend {
+  text-align: center;
+  font-size: 25px;
+  line-height: 42px;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+
+.question-window__input {
+  padding: 15px 0.8vw 15px 2.6vw;
+  border: 1px solid $border-grey;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    color: $black-list;
+    background-color: $white;
+  }
+
+  &--email {
+    padding-left: 0.8vw;
+    padding-right: 2.6vw;
+  }
+
+  @media (max-width: $tablet) {
+    padding-left: 3.8vw;
+    padding-right: 6.6vw;
+
+    &--email {
+      padding-left: 3.8vw;
+      padding-right: 6.6vw;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding-left: 19vw;
+    padding-right: 19vw;
+  }
+}
+
+.question-window__fieldset {
+  padding-bottom: 20px;
+  width: 10vw;
+
+  @media (max-width: $mobile) {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+.question-window__imgs {
+  position: absolute;
+  top: 7px;
+  left: 14px;
+  z-index: 1;
+}
+
+.question-window__phone {
+  position: relative;
+}
+
+.question-window__seven {
+  padding-top: 8px;
+}
+
+.question-window__button {
+  padding: 18px 40px;
+  margin: 0 auto;
+  display: block;
+
+  @media (max-width: $mobile) {
+    width: 90vw;
+  }
+}
+
+.question-window__flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

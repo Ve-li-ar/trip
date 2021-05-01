@@ -1,0 +1,124 @@
+.modal-window {
+  display: flex;
+  width: 38vw;
+  padding-top: 100px;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  margin-left: 17vw;
+
+  @media (max-width: $tablet) {
+    margin-left: 0;
+    width: 100vw;
+  }
+}
+
+.modal-window__inactive {
+  display: none;
+  position: absolute;
+}
+
+.modal-window__visiab .modal-window__img {
+  width: 338px;
+}
+
+.modal-window__img {
+  @media (max-width: 767px) {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+  }
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+.modal-window__form {
+  padding: 60px 72px 100px 72px;
+  background-color: $background-modal;
+
+  @media (max-width: 767px) {
+    position: relative;
+    z-index: 1;
+    left: 33vw;
+  }
+
+  @media (max-width: $mobile) {
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100vw;
+  }
+}
+
+.modal-window__legend {
+  text-align: center;
+  font-size: 25px;
+  line-height: 42px;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+
+.modal-window__input {
+  padding: 15px 15px 15px 50px;
+  border: 1px solid $border-grey;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    color: $black-list;
+    background-color: $white;
+  }
+
+  &--email {
+    padding-left: 15px;
+    padding-right: 50px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-right: 70px;
+
+    &--email {
+      padding-right: 103px;
+    }
+  }
+}
+
+.modal-window__fieldset {
+  padding-bottom: 20px;
+
+  @media (max-width: $mobile) {
+    margin: 0 auto;
+    width: 90vw;
+  }
+}
+
+.modal-window__imgs {
+  position: absolute;
+  top: 7px;
+  left: 14px;
+  z-index: 1;
+}
+
+.modal-window__phone {
+  position: relative;
+}
+
+.modal-window__seven {
+  padding-top: 8px;
+}
+
+.modal-window__button {
+  padding: 18px 40px;
+  margin: 0 auto;
+  display: block;
+
+  @media (max-width: $mobile) {
+    width: 90vw;
+  }
+}

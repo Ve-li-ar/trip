@@ -1,0 +1,45 @@
+.button-burger {
+  display: none;
+}
+
+@media (max-width: $tablet) {
+  .button-burger {
+    z-index: 2;
+    display: block;
+    background-color: $basic-orange;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    width: 72px;
+    height: 50px;
+    position: relative;
+    right: -0;
+    top: 0;
+    left: auto;
+    margin: 0;
+  }
+
+  .button-burger::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 16px;
+    left: 25px;
+    width: 22.5px;
+    height: 1px;
+    background-color: $basic-white;
+    box-shadow: 0 8px 0 0 $basic-white, 0 16px 0 0 $basic-white;
+  }
+}
+
+@media (max-width: $mobile) {
+  .button-burger {
+    width: 50px;
+    height: 50px;
+    right: 0;
+  }
+
+  .button-burger::before {
+    left: 13px;
+  }
+}

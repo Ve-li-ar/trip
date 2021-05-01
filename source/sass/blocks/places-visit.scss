@@ -1,0 +1,221 @@
+.places-visit {
+  padding-top: 200px;
+
+  @media (max-width: $tablet) {
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 108px;
+  }
+}
+
+.places-visit__span {
+  padding-top: 17px;
+  background-color: $white;
+  margin: 367px 3.55vw 0;
+  display: block;
+  text-align: center;
+  width: 11.2vw;
+  min-height: 63px;
+  font-size: 24px;
+  padding-bottom: 17px;
+  color: $dark;
+
+  @media (max-width: $tablet) {
+    margin-left: 5.5vw;
+    width: 28vw;
+    min-height: 62px;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $mobile) {
+    width: 67.2vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.places-visit__country {
+  margin-bottom: 102px;
+  margin-right: 2.6vw;
+
+  &--greece,
+  &--albania,
+  &--macedonia,
+  &--montenegro,
+  &--croatia {
+    background-size: cover;
+    width: 18.4vw;
+    min-height: 430px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-color: $blue;
+  }
+
+  &--greece {
+    background-image: url("../img/greece-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/greece-desktop@2x.jpg");
+    }
+  }
+
+  &--albania {
+    background-image: url("../img/albania-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/albania-desktop@2x.jpg");
+    }
+  }
+
+  &--macedonia {
+    background-image: url("../img/macedonia-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/macedonia-desktop@2x.jpg");
+    }
+  }
+
+  &--montenegro {
+    background-image: url("../img/montenegro-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/montenegro-desktop@2x.jpg");
+    }
+  }
+
+  &--croatia {
+    background-image: url("../img/croatia-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/croatia-desktop@2x.jpg");
+    }
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 102px;
+    margin-right: 0;
+
+    &--greece,
+    &--albania,
+    &--macedonia,
+    &--montenegro,
+    &--croatia {
+      width: 37.5vw;
+      min-height: 425px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      box-sizing: border-box;
+    }
+
+    &--greece {
+      background-image: url("../img/greece-tablet-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/greece-tablet-mobile@2x.jpg");
+      }
+    }
+
+    &--albania {
+      background-image: url("../img/albania-tablet-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/albania-tablet-mobile@2x.jpg");
+      }
+    }
+
+    &--macedonia {
+      background-image: url("../img/macedonia-tablet-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/macedonia-tablet-mobile@2x.jpg");
+      }
+    }
+
+    &--montenegro {
+      background-image: url("../img/montenegro-tablet-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/montenegro-tablet-mobile@2x.jpg");
+      }
+    }
+
+    &--croatia {
+      background-image: url("../img/croatia-tablet-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/croatia-tablet-mobile@2x.jpg");
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    width: 97%;
+    margin: 35px auto 0;
+  }
+}
+
+.places-visit__list {
+  padding-left: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 64px;
+
+  @media (max-width: $tablet) {
+    padding-top: 40px;
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
+}
+
+.places-visit__caption {
+  font-size: 55px;
+  line-height: 80px;
+  font-weight: 600;
+  letter-spacing: -1.25px;
+  position: relative;
+  margin: 0;
+  width: 18.6vw;
+
+  &::before {
+    content: "";
+    width: 11.9vw;
+    height: 4px;
+    background-color: $basic-orange;
+    position: absolute;
+    z-index: 2;
+    top: 164px;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 30px;
+    line-height: 45px;
+    margin: 0 auto;
+    width: 100%;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.places-visit__block {
+  color: $place-text-grey;
+  width: 18.6vw;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+    width: 44.7vw;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+}

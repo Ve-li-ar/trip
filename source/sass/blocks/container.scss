@@ -1,0 +1,14 @@
+.container {
+  padding-left: 17vw;
+  padding-right: 17vw;
+
+  @media (max-width: $tablet) {
+    padding-left: 2.7vw;
+    padding-right: 2.7vw;
+  }
+
+  @media (max-width: $mobile) {
+    padding-left: 2.2%;
+    padding-right: 2.3%;
+  }
+}

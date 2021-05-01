@@ -1,0 +1,66 @@
+.wrapper {
+  margin-left: 18.2vw;
+  margin-right: 11.6vw;
+  background-repeat: no-repeat;
+  background-position: 0 100px;
+  background-size: 75.2vw 1090px;
+  background-image: url("../img/background-map.jpg");
+  position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-map@2x.jpg");
+  }
+
+  @media (max-width: $tablet) {
+    background-image: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.tabs-nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $place-text-grey;
+  margin-right: 1.5vw;
+
+  @media (max-width: $tablet) {
+    margin-left: 1.5vw;
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: 5.5vw;
+    margin-right: 5.5vw;
+  }
+}
+
+.tabs-nav__item {
+  cursor: pointer;
+
+  padding: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $place-text-grey;
+}
+
+.tab {
+  display: none;
+}
+
+.tab.is-active {
+  display: block;
+}
+
+.tabs {
+  padding-right: 22vw;
+  position: relative;
+
+  @media (max-width: $tablet) {
+    padding: 0;
+  }
+}
+
+.tabs-nav__item.is-active {
+  color: $basic-orange;
+}
