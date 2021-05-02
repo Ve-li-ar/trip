@@ -21,10 +21,6 @@
     display: flex;
     flex-wrap: wrap;
   }
-
-  // @media (max-width: $mobile) {
-  //   grid-template-columns: max-content max-content;
-  // }
 }
 
 .footer__trips {
@@ -172,7 +168,8 @@
 .footer__svg {
   stroke: $border-grey;
   margin-right: 15px;
-  width: 100%;
+  vertical-align: middle;
+  fill: none;
 
   &--email {
     width: 26px;

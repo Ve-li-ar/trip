@@ -6,14 +6,27 @@
   min-height: 445px;
   margin-bottom: 170px;
   position: relative;
+  width: 844px;
+  background-size: 844px 445px;
+  background-color: #814842;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/form-sunset-desktop@2x.jpg");
+  }
 
   @media (max-width: $tablet) {
     margin-right: 0;
+    width: 100%;
     margin-left: 0;
+    background-image: url("../img/form-sunset-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/form-sunset-tablet@2x.jpg");
+    }
   }
 
   @media (max-width: $mobile) {
-    background-image: none;
+    background: none;
   }
 }
 

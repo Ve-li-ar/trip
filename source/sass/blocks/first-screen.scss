@@ -12,24 +12,35 @@
   }
 
   @media (max-width: $tablet) {
-    width: 100%;
+    margin: 0 auto;
     display: block;
-
-    background-image: url("../img/background-main-tablet.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/background-main-tablet@2x.jpg");
-    }
   }
 
   @media (max-width: $mobile) {
-    background-image: url("../img/background-main-mobile.jpg");
-    background-size: 100% 235px;
-    background-color: transparent;
+    background: none;
+  }
+  // @media (max-width: $tablet) {
+  //   width: 100%;
+  //   display: block;
+  //   background-image: url("../img/background-main-tablet.jpg");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/background-main-mobile@2x.jpg");
-    }
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: url("../img/background-main-tablet@2x.jpg");
+  //   }
+  // }
+
+  // @media (max-width: $mobile) {
+  //   background-image: url("../img/background-main-mobile.jpg");
+
+  //   background-color: transparent;
+
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: url("../img/background-main-mobile@2x.jpg");
+  //   }
+  // }
+
+  @media (max-width: $mobile) {
+    display: block;
   }
 }
 
@@ -46,13 +57,13 @@
 
   @media (max-width: $mobile) {
     font-size: 24px;
+    background-color: $blue;
     line-height: 36px;
     padding-top: 60px;
     padding-bottom: 100px;
-
+    background-repeat: no-repeat;
     background-image: url("../img/background-main-mobile.jpg");
-    background-size: 100% 235px;
-    background-color: $blue;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background-main-mobile@2x.jpg");
@@ -68,14 +79,14 @@
 
   @media (max-width: $tablet) {
     width: 56vw;
-    margin: 0 auto;
     text-align: center;
     padding-top: 60px;
     padding-bottom: 83px;
+    margin: 0 auto;
   }
 
   @media (max-width: $mobile) {
-    width: 90vw;
+    width: 100vw;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -96,13 +107,20 @@
 
 .first-screen__button {
   margin-top: 40px;
-  padding: 30px 180px 30px 40px;
+  padding: 30px 30px 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 17.7vw;
+  margin: 0 auto;
 
   @media (max-width: $tablet) {
-    padding: 19px 107px 19px 40px;
+    padding: 19px 18px 19px 40px;
+    width: 32.5vw;
   }
 
   @media (max-width: $mobile) {
-    width: 100%;
+    width: 90%;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 }

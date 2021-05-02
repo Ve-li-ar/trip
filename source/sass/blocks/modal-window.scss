@@ -1,7 +1,7 @@
-.modal-window {
+.modal-window__active {
   display: flex;
-  width: 38vw;
-  padding-top: 100px;
+  width: 100vw;
+
   animation-name: bounce;
   animation-duration: 1s;
   animation-timing-function: ease;
@@ -10,7 +10,11 @@
   animation-direction: normal;
   animation-fill-mode: none;
   animation-play-state: running;
-  margin-left: 17vw;
+
+  visibility: visible;
+  position: absolute;
+  opacity: 1;
+  z-index: 4;
 
   @media (max-width: $tablet) {
     margin-left: 0;
@@ -19,11 +23,11 @@
 }
 
 .modal-window__inactive {
+  visibility: hidden;
   display: none;
-  position: absolute;
 }
 
-.modal-window__visiab .modal-window__img {
+.modal-window__img {
   width: 338px;
 }
 
@@ -36,6 +40,26 @@
 
   @media (max-width: $mobile) {
     display: none;
+  }
+}
+
+.modal-window__active .overlay {
+  box-sizing: content-box;
+  background-color: rgba(59, 67, 76, 0.9);
+  width: 100%;
+  height: 100%;
+  margin: -50px 0;
+  padding: inherit;
+  padding-left: 32vw;
+  padding-right: 32vw;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 500px;
+  padding-bottom: 800px;
+
+  @media (max-width: $tablet) {
+    padding-left: 12.8vw;
+    padding-right: 12.8vw;
   }
 }
 .modal-window__form {

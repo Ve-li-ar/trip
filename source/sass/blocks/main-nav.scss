@@ -105,7 +105,7 @@
   @media (max-width: $tablet) {
     width: 100vw;
     background-color: $white-background;
-    padding: 17px 35px 17px 0;
+    padding-right: 0;
     margin-bottom: 30px;
   }
 }
@@ -115,7 +115,6 @@
   font-size: 14px;
   line-height: 17px;
   color: $extra-dark;
-  margin: 0;
 
   &--underline {
     text-decoration: underline;
@@ -127,70 +126,31 @@
     font-size: 20px;
     line-height: 28px;
     font-weight: 600;
+    display: flex;
+    justify-content: space-between;
   }
 }
-// .main-nav--opened .page-body__header {
-//   border: none;
-// }
 
-// .main-nav--opened {
-//   display: flex;
-//   flex-direction: column;
+.main-nav__img {
+  width: 57px;
+  height: 22px;
 
-//   @media (min-width: $tablet-width) {
-//     flex-direction: row;
-//   }
-// }
+  @media (max-width: $tablet) {
+    width: 44px;
+    height: 17px;
+  }
+}
 
-// .main-nav .button-burger::before {
-//   display: block;
-//   position: absolute;
-//   content: "";
-//   top: 0;
-//   left: 0;
-//   width: 24px;
-//   height: 2px;
-//   background-color: $basic-black;
-//   box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
-// }
+.main-nav__svg {
+  vertical-align: middle;
+  fill: none;
+}
 
-// .main-nav--opened .button-burger {
-//   top: 0;
-//   right: 0;
-//   left: auto;
+.main-nav__arrow {
+  display: none;
 
-//   &::before,
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     width: 24px;
-//     height: 1px;
-//     background-color: $basic-black;
-//   }
-
-//   &::before {
-//     transform: rotate(45deg);
-//     box-shadow: none;
-//     right: 8px;
-//     top: 4px;
-//   }
-
-//   &::after {
-//     top: 4px;
-//     right: 0;
-//     left: 1px;
-//     transform: rotate(-45deg);
-//   }
-// }
-
-// @media (min-width: $tablet-width) {
-//   .main-nav .button-burger {
-//     display: none;
-//   }
-// }
-
-// @media (min-width: $desktop-width) {
-//   .main-nav .main-nav__list {
-//     justify-content: flex-end;
-//   }
-// }
+  @media (max-width: $tablet) {
+    display: block;
+    color: $place-text-grey-3;
+  }
+}

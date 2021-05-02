@@ -9,20 +9,16 @@
 }
 
 .tab__section {
-  width: 19.4vw;
+  width: 25vw;
   margin-right: 4.2vw;
 
   @media (max-width: $tablet) {
     width: 95%;
     text-align: center;
-    min-width: 526px;
+
     padding-bottom: 30px;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
-  }
-
-  @media (max-width: $mobile) {
-    min-width: 310px;
   }
 }
 
@@ -94,17 +90,15 @@
 .tab__reviews {
   position: absolute;
   top: 300px;
-  left: 59%;
+  left: 60%;
   right: 10%;
   width: 382px;
   background-color: $white;
   padding: 30px;
-  min-height: 367px;
 
   @media (max-width: $tablet) {
     top: 67%;
     left: 25%;
-    min-height: 337px;
   }
 
   @media (max-width: $mobile) {

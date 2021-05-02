@@ -13,32 +13,49 @@ toggleBtn.addEventListener('click', function () {
   }
 });
 
+const modal = document.querySelectorAll('.tab-modal');
+const modalWindow = document.querySelector('.modal-window');
+
+modal.forEach(item => {
+  item.addEventListener('click', selectModal)
+});
+
+
+function selectModal() {
+  if (modalWindow.classList.contains('modal-window__inactive')) {
+    modalWindow.classList.remove('modal-window__inactive');
+    modalWindow.classList.add('modal-window__active');
+  } else {
+    modalWindow.classList.add('modal-window__active');
+    modalWindow.classList.remove('modal-window__inactive');
+  }
+}
 
 
 
 let tab = function () {
-    let tabNav = document.querySelectorAll('.tabs-nav__items'),
-        tabContent = document.querySelectorAll('.tab'),
-        tabName;
+  let tabNav = document.querySelectorAll('.tabs-nav__items'),
+    tabContent = document.querySelectorAll('.tab'),
+    tabName;
 
+  tabNav.forEach(item => {
+    item.addEventListener('click', selectTabNav)
+  });
+
+  function selectTabNav() {
     tabNav.forEach(item => {
-        item.addEventListener('click', selectTabNav)
+      item.classList.remove('is-active');
     });
+    this.classList.add('is-active');
+    tabName = this.getAttribute('data-tab-name');
+    selectTabContent(tabName);
+  }
 
-    function selectTabNav() {
-        tabNav.forEach(item => {
-            item.classList.remove('is-active');
-        });
-        this.classList.add('is-active');
-        tabName = this.getAttribute('data-tab-name');
-        selectTabContent(tabName);
-    }
-
-    function selectTabContent(tabName) {
-        tabContent.forEach(item => {
-            item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active');
-        })
-    }
+  function selectTabContent(tabName) {
+    tabContent.forEach(item => {
+      item.classList.contains(tabName) ? item.classList.add('is-active') : item.classList.remove('is-active');
+    })
+  }
 };
 
 
