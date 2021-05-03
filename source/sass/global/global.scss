@@ -12,12 +12,12 @@ li {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
+  // -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .content-box-component {
-  -webkit-box-sizing: content-box;
+  // -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 

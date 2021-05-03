@@ -38,16 +38,23 @@
   position: relative;
   font-size: 16px;
   line-height: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
   min-height: 672px;
 
-  &:hover {
+  &:hover,
+  &:active {
     border-color: $basic-orange;
 
     .prices__caption {
       color: $basic-orange;
+    }
+
+    .prices__stick {
+      fill: $extra-dark;
+    }
+
+    .prices__block {
+      border-bottom: 1px solid $basic-orange;
     }
   }
 
@@ -64,7 +71,6 @@
 }
 
 .prices__list {
-  padding-left: 0;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 54px;
@@ -77,25 +83,30 @@
 }
 
 .prices__item {
-  padding-left: 1.4vw;
   position: relative;
   padding-bottom: 15px;
 
-  &::before {
-    content: "";
-    background-image: url("../img/icons/tick/svg");
-    position: absolute;
-    width: 14px;
-    height: 12px;
-    fill: $basic-orange;
-    stroke: $basic-orange;
-    z-index: 3;
-    left: 10px;
-    color: $basic-orange;
-    background-size: 14px 12px;
-    display: inline-block;
-  }
+  display: grid;
+  grid-template-columns: 28px 1fr;
 }
+
+// &::after {
+//   content: "";
+//   position: absolute;
+//   background-image: url("../img/icons/stick.svg");
+//   top: 8px;
+//   left: 0;
+//   width: 14px;
+//   height: 12px;
+//   background-position: center;
+//   z-index: 3;
+//   background-repeat: no-repeat;
+//   fill: red;
+//   stroke: red;
+//   color: red;
+//   background-size: 14px 12px;
+//   display: inline-block;
+// }
 
 .prices__price {
   width: 15.6vw;
@@ -171,6 +182,14 @@
   }
 }
 
+.prices__block br {
+  display: none;
+
+  @media (max-width: $tablet) {
+    display: block;
+  }
+}
+
 .prices__price-caption {
   font-size: 55px;
   line-height: 90px;
@@ -183,6 +202,7 @@
   width: 16.1vw;
   padding: 30px 3.1vw;
   margin: 0 auto;
+  display: block;
 
   @media (max-width: $tablet) {
     width: 102%;
@@ -247,5 +267,6 @@
 }
 
 .prices__stick {
-  fill: $extra-dark;
+  margin-top: 15px;
+  fill: $basic-orange;
 }

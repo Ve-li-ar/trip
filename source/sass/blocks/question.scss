@@ -35,7 +35,7 @@
   background-color: $white;
   width: 34vw;
   align-self: end;
-  box-shadow: 0px 4px 30px $box-shadow-question;
+  box-shadow: 0 4px 30px $box-shadow-question;
   position: absolute;
   top: 18%;
   left: 25vw;
@@ -79,6 +79,10 @@
   &--email {
     padding-left: 0.8vw;
     padding-right: 2.6vw;
+  }
+
+  &:focus:invalid {
+    border: 2px solid #ff8282;
   }
 
   @media (max-width: $tablet) {

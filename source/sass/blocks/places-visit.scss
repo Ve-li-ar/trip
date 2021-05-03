@@ -14,7 +14,6 @@
 .places-visit__span {
   padding-top: 17px;
   background-color: $white;
-  right: auto;
   display: block;
   text-align: center;
   min-height: 63px;
@@ -39,6 +38,10 @@
   }
 }
 
+.places-visit__span-center {
+  display: none;
+}
+
 .places-visit__country {
   margin-bottom: 102px;
   margin-right: 4.6vw;
@@ -50,7 +53,6 @@
   &--montenegro,
   &--croatia {
     background-size: cover;
-
     min-height: 430px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -77,6 +79,36 @@
   @media (max-width: $mobile) {
     margin: 35px auto 0;
   }
+
+  &:hover,
+  &:active {
+    .places-visit__span-center {
+      position: absolute;
+      display: block;
+      top: 35%;
+      left: 12%;
+      right: 13%;
+      padding: 30px 20px;
+      border: 1px solid $white;
+      color: $white;
+      font-size: 14px;
+      line-height: 17px;
+      width: 266px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}
+
+.places-visit__country:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .places-visit__list {
@@ -143,7 +175,6 @@
 }
 
 .places-visit__img {
-  width: 430px;
   width: 100%;
 }
 
@@ -154,7 +185,6 @@
   }
 
   @media (max-width: $mobile) {
-    margin-right: 0;
     width: 288px;
     margin: 0 auto;
   }

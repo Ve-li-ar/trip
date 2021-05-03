@@ -106,12 +106,11 @@
 }
 
 .first-screen__button {
-  margin-top: 40px;
   padding: 30px 30px 30px 40px;
   display: flex;
   justify-content: space-between;
   width: 17.7vw;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
 
   @media (max-width: $tablet) {
     padding: 19px 18px 19px 40px;

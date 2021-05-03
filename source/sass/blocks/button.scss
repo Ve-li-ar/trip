@@ -7,4 +7,20 @@
   line-height: 14.6px;
   letter-spacing: 2px;
   text-transform: uppercase;
+
+  &:hover,
+  &:active {
+    background-color: $orange;
+  }
+
+  @media (max-width: $tablet) {
+    &:focus-visible {
+      background-color: $orange;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    width: 288px;
+    margin: 0 auto;
+  }
 }
