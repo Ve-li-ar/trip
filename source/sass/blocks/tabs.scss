@@ -20,6 +20,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid $place-text-grey;
+  margin-left: 5.3vw;
 
   @media (max-width: $tablet) {
     margin-left: 1.5vw;
@@ -34,8 +35,7 @@
 
 .tabs-nav__item {
   cursor: pointer;
-
-  padding: 20px;
+  padding: 20px 0 20px 20px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
@@ -64,4 +64,10 @@
 
 .tabs-nav__item.is-active {
   color: $basic-orange;
+}
+
+.tabs-nav__items {
+  &--greece {
+    padding-left: 0;
+  }
 }

@@ -45,9 +45,10 @@
 }
 
 .first-screen__caption {
+  padding-top: 5px;
   margin: 0;
   font-weight: 600;
-  font-size: 55px;
+  font-size: 50px;
   line-height: 80px;
 
   @media (max-width: $tablet) {
@@ -74,8 +75,10 @@
 .first-screen__wrapper {
   grid-column-start: 4;
   grid-column-end: 5;
-  padding-top: 185px;
-  padding-bottom: 296px;
+  padding-top: 180px;
+  padding-bottom: 294px;
+  margin-left: -4.1vw;
+  letter-spacing: 0.4px;
 
   @media (max-width: $tablet) {
     width: 56vw;
@@ -93,11 +96,12 @@
 }
 
 .first-screen__block {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 27px;
   margin: 0;
   padding-top: 30px;
   font-weight: 400;
+  margin-right: 83px;
 
   @media (max-width: $mobile) {
     color: $dark;
@@ -106,11 +110,11 @@
 }
 
 .first-screen__button {
-  padding: 30px 30px 30px 40px;
+  padding: 32px 37px 30px 40px;
   display: flex;
   justify-content: space-between;
   width: 17.7vw;
-  margin: 40px auto 0 auto;
+  margin-top: 34px;
 
   @media (max-width: $tablet) {
     padding: 19px 18px 19px 40px;

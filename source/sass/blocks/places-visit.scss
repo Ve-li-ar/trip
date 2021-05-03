@@ -43,9 +43,14 @@
 }
 
 .places-visit__country {
-  margin-bottom: 102px;
-  margin-right: 4.6vw;
+  margin-bottom: 92px;
+  margin-right: 0.2vw;
+  margin-left: -1vw;
   position: relative;
+
+  &--padding {
+    margin-bottom: 52px;
+  }
 
   &--greece,
   &--albania,
@@ -132,11 +137,11 @@
   font-size: 55px;
   line-height: 80px;
   font-weight: 600;
-  letter-spacing: -1.25px;
+  letter-spacing: -3px;
   position: relative;
   margin: 0;
   width: 18.6vw;
-  padding-left: 20px;
+  padding-left: 67px;
 
   &::before {
     content: "";
@@ -145,7 +150,7 @@
     background-color: $basic-orange;
     position: absolute;
     z-index: 2;
-    top: 164px;
+    top: 189px;
   }
 
   @media (max-width: $tablet) {
@@ -162,7 +167,13 @@
 
 .places-visit__block {
   color: $place-text-grey;
-  width: 18.6vw;
+  width: 23.6vw;
+  margin: 0;
+  padding-top: 63px;
+  line-height: 18px;
+  padding-left: 67px;
+  line-height: 27px;
+  letter-spacing: -0.3px;
 
   @media (max-width: $tablet) {
     margin: 0 auto;
@@ -179,6 +190,15 @@
 }
 
 .places-visit__link {
+  &--padding {
+    padding-left: 6vw;
+    margin-bottom: 20px;
+  }
+
+  &--padding-second {
+    padding-right: 5.73vw;
+    margin-bottom: 20px;
+  }
   @media (max-width: $tablet) {
     margin-right: 10px;
     display: block;

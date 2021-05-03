@@ -1,9 +1,8 @@
 .main-nav__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-left: 17vw;
-  padding-right: 10px;
-  padding-right: 17vw;
+  padding-left: 19.6vw;
+  padding-right: 17.3vw;
 
   @media (max-width: $tablet) {
     padding-left: 6.6vw;
@@ -19,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   padding-left: 0;
-
+  padding-right: 5px;
   margin: 0;
 }
 
@@ -35,7 +34,7 @@
     font-size: 18px;
     line-height: 32px;
     font-weight: 400;
-    padding-left: 4.7vw;
+    padding-left: 1vw;
   }
 
   @media (max-width: $tablet) {
@@ -59,6 +58,7 @@
 .main-nav__lists {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
 
   @media (max-width: $tablet) {
     padding-right: 0;
@@ -92,7 +92,7 @@
 }
 
 .main-nav__item {
-  padding-right: 6vw;
+  padding-right: 2vw;
 
   @media (max-width: $tablet) {
     width: 100vw;
@@ -104,7 +104,7 @@
 
 .main-nav__link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 17px;
   color: $extra-dark;
 
@@ -126,6 +126,10 @@
   &:active {
     color: $basic-orange;
   }
+}
+
+.main-nav__link-menu {
+  font-size: 14px;
 }
 
 .main-nav__link:hover .main-nav__svg {
