@@ -1,9 +1,9 @@
 .question {
   margin-top: 138px;
-  margin-left: 18vw;
+  margin-left: 20.2vw;
   background-image: url("../img/form-sunset-desktop.jpg");
   background-repeat: no-repeat;
-  min-height: 445px;
+  min-height: 454px;
   margin-bottom: 170px;
   position: relative;
   width: 844px;
@@ -18,7 +18,10 @@
     margin-right: 0;
     width: 100%;
     margin-left: 0;
+    margin-top: 122px;
     background-image: url("../img/form-sunset-tablet.jpg");
+    background-size: 844px 554px;
+    margin-bottom: 80px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/form-sunset-tablet@2x.jpg");
@@ -31,18 +34,19 @@
 }
 
 .question__form {
-  padding: 50px 72px;
+  padding: 44px 48px 48px 50px;
   background-color: $white;
   width: 34vw;
   align-self: end;
   box-shadow: 0 4px 30px $box-shadow-question;
   position: absolute;
-  top: 18%;
-  left: 25vw;
+  top: 15%;
+  left: 26.7vw;
 
   @media (max-width: $tablet) {
     width: 85.7vw;
-    left: 8%;
+    left: 7%;
+    padding: 44px 48px 50px 50px;
   }
 
   @media (max-width: $mobile) {
@@ -59,14 +63,20 @@
 
 .question-window__legend {
   text-align: center;
-  font-size: 25px;
+  font-size: 23px;
   line-height: 42px;
   font-weight: 600;
-  padding-bottom: 50px;
+  padding-bottom: 9px;
+}
+
+.question-window__block {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 28px;
 }
 
 .question-window__input {
-  padding: 15px 0.8vw 15px 2.6vw;
+  padding: 15px 2.8vw 15px 2.6vw;
   border: 1px solid $border-grey;
 
   &::placeholder {
@@ -86,24 +96,34 @@
   }
 
   @media (max-width: $tablet) {
-    padding-left: 3.8vw;
-    padding-right: 6.6vw;
+    padding-left: 6.8vw;
+    padding-right: 6.5vw;
+    padding-top: 17px;
+    padding-bottom: 17px;
 
     &--email {
-      padding-left: 3.8vw;
-      padding-right: 6.6vw;
+      padding-left: 2vw;
+      padding-right: 11vw;
+    }
+
+    &::placeholder {
+      font-size: 15px;
     }
   }
 
   @media (max-width: $mobile) {
-    padding-left: 19vw;
-    padding-right: 19vw;
+    padding-left: 2vw;
+    padding-right: 11vw;
   }
 }
 
 .question-window__fieldset {
-  padding-bottom: 20px;
-  width: 10vw;
+  padding-bottom: 25px;
+  width: 14vw;
+
+  @media (max-width: $tablet) {
+    padding-bottom: 19px;
+  }
 
   @media (max-width: $mobile) {
     width: 90vw;
@@ -113,13 +133,14 @@
 
 .question-window__imgs {
   position: absolute;
-  top: 7px;
-  left: 14px;
+  top: 0;
+  left: 17px;
   z-index: 1;
 }
 
 .question-window__phone {
   position: relative;
+  width: 269px;
 }
 
 .question-window__seven {
@@ -130,6 +151,11 @@
   padding: 18px 40px;
   margin: 0 auto;
   display: block;
+
+  @media (max-width: $tablet) {
+    padding-left: 79px;
+    padding-right: 79px;
+  }
 
   @media (max-width: $mobile) {
     width: 90vw;

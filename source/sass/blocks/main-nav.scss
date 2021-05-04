@@ -3,10 +3,12 @@
   justify-content: space-between;
   padding-left: 19.6vw;
   padding-right: 17.3vw;
+  position: relative;
 
   @media (max-width: $tablet) {
-    padding-left: 6.6vw;
+    padding-left: 0;
     padding-right: 0;
+    display: block;
   }
 
   @media (max-width: $mobile) {
@@ -53,6 +55,14 @@
 .main-nav__logo {
   padding-top: 18px;
   padding-bottom: 14px;
+  display: block;
+
+  @media (max-width: $tablet) {
+    padding-top: 18px;
+    padding-bottom: 14px;
+    padding-left: 21px;
+    position: absolute;
+  }
 }
 
 .main-nav__lists {
@@ -62,6 +72,7 @@
 
   @media (max-width: $tablet) {
     padding-right: 0;
+    padding-top: 0;
   }
 }
 

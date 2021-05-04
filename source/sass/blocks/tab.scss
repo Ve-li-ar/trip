@@ -1,24 +1,24 @@
 .tab__card {
   display: flex;
-  padding-top: 85px;
+  padding-top: 76px;
 
   @media (max-width: $tablet) {
     flex-direction: column;
-    padding-top: 33px;
+    padding-top: 10px;
   }
 }
 
 .tab__section {
   width: 25vw;
-  margin-right: 4.2vw;
+  margin-right: 4.8vw;
+  padding-left: 5.3vw;
 
   @media (max-width: $tablet) {
-    width: 95%;
+    width: 97%;
     text-align: center;
-
     padding-bottom: 30px;
-    margin-left: 1.5vw;
     margin-right: 1.5vw;
+    padding-left: 1.3vw;
   }
 }
 
@@ -28,18 +28,23 @@
   font-weight: 600;
   position: relative;
   margin: 0;
+  letter-spacing: -0.23vw;
+  padding-top: 9px;
 
   &::before {
     content: "";
-    width: 11.9vw;
+    width: 9vw;
     height: 4px;
     background-color: #fe7865;
     position: absolute;
     z-index: 2;
-    top: 90px;
+    top: 113px;
   }
 
   @media (max-width: $tablet) {
+    font-size: 30px;
+    padding-top: 0;
+
     &::before {
       display: none;
     }
@@ -56,9 +61,13 @@
   line-height: 28px;
   color: $place-text-grey;
   padding-top: 50px;
-  padding-bottom: 50px;
   margin: 0;
+  padding-left: 4px;
   letter-spacing: -0.47px;
+
+  @media (max-width: $tablet) {
+    padding-top: 0;
+  }
 
   @media (max-width: $mobile) {
     padding-top: 30px;
@@ -75,6 +84,9 @@
 
   @media (max-width: $tablet) {
     margin: 0 auto;
+    padding: 18px 35px;
+    margin-top: 18px;
+    font-size: 10px;
   }
 }
 
@@ -89,16 +101,17 @@
 
 .tab__reviews {
   position: absolute;
-  top: 300px;
-  left: 60%;
+  top: 250px;
+  left: 62.4%;
   right: 10%;
   width: 382px;
   background-color: $white;
-  padding: 30px;
+  padding: 36px 30px 13px 30px;
 
   @media (max-width: $tablet) {
-    top: 67%;
+    top: 60%;
     left: 25%;
+    padding: 29px 30px 13px;
   }
 
   @media (max-width: $mobile) {
@@ -115,7 +128,7 @@
   display: flex;
   justify-content: start;
   padding-left: 0;
-  margin: 0;
+  align-items: center;
 
   @media (max-width: $mobile) {
     flex-direction: column;
@@ -134,12 +147,15 @@
 }
 
 .tab__reviews-block {
-  padding-bottom: 35px;
+  padding-bottom: 12px;
   font-size: 14px;
   line-height: 28px;
   color: rgba(44, 46, 63, 0.7);
-
   letter-spacing: -0.41px;
+
+  @media (max-width: $tablet) {
+    padding-bottom: 14px;
+  }
 
   @media (max-width: $mobile) {
     padding-bottom: 20px;
@@ -147,7 +163,20 @@
 }
 
 .tab__reviews-caption {
-  padding-bottom: 32px;
+  padding-bottom: 34px;
+  font-size: 30px;
+  letter-spacing: -0.7px;
+  font-weight: 500;
+
+  &::before {
+    content: "";
+    width: 9vw;
+    height: 0.73px;
+    background-color: #fe7865;
+    position: absolute;
+    z-index: 2;
+    top: 79px;
+  }
 }
 
 .macedonia,
@@ -162,8 +191,4 @@
   @media (max-width: $tablet) {
     display: none;
   }
-}
-
-.tab__section {
-  padding-left: 5vw;
 }

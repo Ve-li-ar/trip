@@ -1,7 +1,7 @@
 .footer {
   padding-bottom: 81px;
   display: grid;
-  grid-template-columns: 73% 27%;
+  grid-template-columns: 68% 30%;
 
   @media (max-width: $tablet) {
     display: flex;
@@ -27,6 +27,10 @@
   border-right: 1px solid $border-grey;
   margin-bottom: 30px;
 
+  @media (max-width: $tablet) {
+    margin-bottom: 24px;
+  }
+
   @media (max-width: $mobile) {
     border-bottom: 1px solid $border-grey;
     border-right: none;
@@ -38,14 +42,16 @@
 .footer__next-trips {
   border-right: 1px solid $border-grey;
   display: grid;
-  grid-template-columns: 53% 47%;
-  width: 92%;
+  grid-template-columns: 50% 58%;
+  width: 95%;
+  padding-left: 78px;
 
   @media (max-width: $tablet) {
     border-bottom: 1px solid $border-grey;
     border-right: none;
-    grid-template-columns: 57% 43%;
+    grid-template-columns: 55% 43%;
     width: 100%;
+    padding-left: 0;
   }
 
   @media (max-width: $mobile) {
@@ -55,6 +61,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    grid-template-columns: 55% 43%;
   }
 }
 
@@ -77,7 +84,7 @@
   padding-right: 2.8vw;
 
   @media (max-width: $tablet) {
-    padding-right: 7.5vw;
+    padding-right: 6.5vw;
   }
 
   &--last {
@@ -99,7 +106,7 @@
 }
 
 .footer__item {
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   white-space: nowrap;
   color: $footer-text;
 }
@@ -133,19 +140,31 @@
   white-space: wrap;
 
   &--phone {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
 .footer__caption {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 32px;
+  padding-bottom: 19px;
+  padding-left: 6px;
+
+  &--travel {
+    font-size: 17px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-left: 0;
+    padding-bottom: 22px;
+  }
 }
 
 .footer__corporate-travel {
   @media (max-width: $tablet) {
     padding-left: 0;
     text-align: center;
+    padding-top: 29px;
   }
 }
 
@@ -159,9 +178,13 @@
   font-size: 14px;
   line-height: 24px;
   color: $footer-text;
+  margin: 0;
+  margin-right: -10px;
+  padding-left: 6px;
 
   @media (max-width: $tablet) {
     width: 100%;
+    padding-left: 0;
   }
 }
 
@@ -179,10 +202,14 @@
   &--phone {
     width: 17px;
     height: 24px;
+    margin-top: -10px;
+    margin-left: 5px;
   }
 }
 
 .footer__contact {
   display: flex;
   width: 100%;
+  margin: 0;
+  padding-bottom: 25px;
 }

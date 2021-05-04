@@ -1,6 +1,6 @@
 .wrapper {
   background-repeat: no-repeat;
-  background-position: 10vw 100px;
+  background-position: 12.5vw 157px;
   background-size: 75.2vw 1090px;
   background-image: url("../img/background-map.jpg");
   position: relative;
@@ -13,6 +13,7 @@
     background-image: none;
     margin-left: 0;
     margin-right: 0;
+    padding-top: 60px;
   }
 }
 
@@ -23,8 +24,8 @@
   margin-left: 5.3vw;
 
   @media (max-width: $tablet) {
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
+    margin-left: 5vw;
+    margin-right: 0;
   }
 
   @media (max-width: $mobile) {
@@ -40,6 +41,10 @@
   line-height: 24px;
   font-weight: 500;
   color: $place-text-grey;
+
+  @media (max-width: $tablet) {
+    padding: 20px 27px 15px 4px;
+  }
 }
 
 .tab {
